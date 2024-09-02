@@ -1,0 +1,62 @@
+{
+  "bottomRow": 5,
+  "defaultModel": "{\n  \"tips\": [\n    \"Pass data to this widget in the default model field\",\n    \"Access data in the javascript file using the appsmith.model variable\",\n    \"Create events in the widget and trigger them in the javascript file using appsmith.triggerEvent('eventName')\",\n    \"Access data in CSS as var(--appsmith-model-{property-name})\"\n  ]\n}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onIconClick"
+    }
+  ],
+  "events": [
+    "onResetClick",
+    "onIconClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.867bcc8399fa3f897d425d72690b86e4.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "5bypl8rvti",
+  "leftColumn": 20,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 7,
+  "onIconClick": "{{showAlert('Plus icon successfully clicked!!', '');}}",
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "parentColumnSpace": 11.796875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 25,
+  "searchTags": [
+    "external"
+  ],
+  "srcDoc": {
+    "css": "body {\n      display: flex;\n      /*align-items: center;*/\n      justify-content: center;\n      margin: 0;\n/*   background-color: #FFE5B4;*/\n      height: 100vh; /* Optionally, set the height of the body to fill the viewport */\n      margin: 0;\n\t    \n\t\n    }\n .plus-icon-widget {\n      font-size: 30px; /* Adjust the font size as needed */\n\t    cursor: pointer;\n\t \t\tbackground-color: #3498db; \n\t  /*\tpadding: 10px;  Add padding to the container */\n    /*  border-radius: 50%;  Apply border-radius for a circular shape */\n\t\t  color: #ffffff;\n    }\n\n.plus-icon-link {\n      text-decoration: none;\n\t   \t\n      color: #ffffff; \n    }",
+    "html": " <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n\n<div class=\"plus-icon-widget\" id=\"plus-icon\">\n  <!-- Replace the content below with your actual icon code or reference -->\n  <i class=\"fas fa-plus\"></i>\n</div>",
+    "js": "appsmith.onReady(() => {\n  const icon = document.getElementById(\"plus-icon\");\n  icon.addEventListener(\"click\", () => {\n    appsmith.triggerEvent(\"onIconClick\");\n  });\n  //button.innerHTML = appsmith.model.name\n  // Add additional JavaScript logic here if needed\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "topRow": 1,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "body {\n      display: flex;\n      /*align-items: center;*/\n      justify-content: center;\n      margin: 0;\n/*   background-color: #FFE5B4;*/\n      height: 100vh; /* Optionally, set the height of the body to fill the viewport */\n      margin: 0;\n\t    \n\t\n    }\n .plus-icon-widget {\n      font-size: 30px; /* Adjust the font size as needed */\n\t    cursor: pointer;\n\t \t\tbackground-color: #3498db; \n\t  /*\tpadding: 10px;  Add padding to the container */\n    /*  border-radius: 50%;  Apply border-radius for a circular shape */\n\t\t  color: #ffffff;\n    }\n\n.plus-icon-link {\n      text-decoration: none;\n\t   \t\n      color: #ffffff; \n    }",
+    "html": " <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css\">\n\n<div class=\"plus-icon-widget\" id=\"plus-icon\">\n  <!-- Replace the content below with your actual icon code or reference -->\n  <i class=\"fas fa-plus\"></i>\n</div>",
+    "js": "\nappsmith.onReady(() => {\n\nconst icon = document.getElementById (\"plus-icon\");\nicon.addEventListener\t(\"click\", () => {\n    appsmith.triggerEvent(\"onIconClick\");\n\t});\n//button.innerHTML = appsmith.model.name\n    // Add additional JavaScript logic here if needed\n});"
+  },
+  "version": 1,
+  "widgetId": "yedibc58iv",
+  "widgetName": "Custom1"
+}
